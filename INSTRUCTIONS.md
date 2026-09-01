@@ -34,9 +34,13 @@ Some familiarity with Python will be helpful, but is not required.
 
     <img alt="" src="./images/workbench_menu.png" width="186" />
 
-6. In the `Manage plugins` modal, find the `Install from` dropdown. Select `local path`, then in the `Local absolute path` field, enter the absolute path to the location where you cloned this repo.
+6. In the `Manage plugins` modal, find the `Add a plugin` section.
 
-    On Windows, this will probably start with `C:/`; on macOS, it will probably start with `/Users/`. Regardless of your operating system, it should end with the name of the repo directory: `invest-plugin-for-workshop`.
+    In the `Install from` dropdown, select `local path`.
+
+    Then, press the `browse` button (with the folder icon) to locate the cloned repo using File Explorer (on Windows) or Finder (on macOS). Alternatively, you can type or paste the path to the cloned repo directly into the `Local absolute path` field.
+
+    Make sure the path ends with the name of the repo directory: `invest-plugin-for-workshop`.
 
     Read the disclaimer, check the checkbox, and then press the `Add` button.
 
