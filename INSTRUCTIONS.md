@@ -1,11 +1,12 @@
 # Plugin Workshop Instructions
 
 ## Prerequisites
-Before you begin, please make sure you have installed the latest version (3.20.0) of the [InVEST® Workbench](https://naturalcapitalalliance.stanford.edu/software/invest/invest-downloads-data#invest-workbench).
+Before you begin, please make sure you have installed the following:
+- the latest version of the [InVEST® Workbench](https://naturalcapitalalliance.stanford.edu/software/invest/invest-downloads-data#invest-workbench)
+- [git](https://git-scm.com/install/)
 
 You may also want to have the following **optional** tools installed:
 - [conda](https://docs.conda.io/en/latest)
-- [git](https://git-scm.com/install/)
 - your text editor of choice (VSCode, Sublime Text, Vim, etc.)
 
   Don't have a favorite text editor? No problem—most operating systems ship with a text editor you can use for this activity. Try `Notepad` or `Edit` on Windows, or `TextEdit` on macOS.
@@ -23,12 +24,9 @@ Some familiarity with Python will be helpful, but is not required.
       <img alt="" src="./images/clone_repo-light.png" width="320" />
     </picture>
 
-2. Choose one of the following:
+2. Copy the git URL and `git clone` the repo using the command line.
 
-    - If you have git installed, copy the git URL and `git clone` the repo using the command line.
-    - If you don't have git (or would rather not use it right now), select `Download ZIP`. Once the `.zip` file has been downloaded, unzip it.
-
-3. Open the cloned/downloaded repo folder in your text editor.
+3. Open the cloned repo folder in your text editor.
 
 4. Before observing the plugin in action, we'll explore the code to learn about some key components of the InVEST Plugin API (package name, metadata, model spec, execute, validate) and optional components included with this plugin (sample data, reporter module).
 
@@ -36,9 +34,13 @@ Some familiarity with Python will be helpful, but is not required.
 
     <img alt="" src="./images/workbench_menu.png" width="186" />
 
-6. In the `Manage plugins` modal, find the `Install from` dropdown. Select `local path`, then in the `Local absolute path` field, enter the absolute path to the location where you cloned/downloaded this repo.
+6. In the `Manage plugins` modal, find the `Add a plugin` section.
 
-    On Windows, this will probably start with `C:/`; on macOS, it will probably start with `/Users/`. Regardless of your operating system, it should end with the name of the repo directory: `invest-plugin-for-workshop`.
+    In the `Install from` dropdown, select `local path`.
+
+    Then, press the `browse` button (with the folder icon) to locate the cloned repo using File Explorer (on Windows) or Finder (on macOS). Alternatively, you can type or paste the path to the cloned repo directly into the `Local absolute path` field.
+
+    Make sure the path ends with the name of the repo directory: `invest-plugin-for-workshop`.
 
     Read the disclaimer, check the checkbox, and then press the `Add` button.
 
