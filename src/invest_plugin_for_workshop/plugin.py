@@ -194,6 +194,17 @@ def execute(args):
 
     Args:
         args (dict): dictionary mapping input ids to their user-provided values
+        args['workspace_dir'] (string): a path to the directory that will
+            write output and other temporary files during calculation.
+        args['lulc_raster'] (string): path to a GDAL raster representing
+            land use / land cover classes.
+        args['biophysical_table']: path to a CSV mapping each LULC code
+            to the type of tree cover on that LULC class.
+        args['aoi_path']: path to a GDAL polygon vector used to aggregate results
+        args['birb_population_density_table']: path to a CSV mapping 
+            user-defined groups of birbs to their population density in
+            coniferous and deciduous forest
+
 
     Returns:
         file registry dictionary
@@ -245,7 +256,6 @@ def execute(args):
             'column_name': 'lucode',
             'table_name': 'biophysical_table'
         })
-
 
     # ############# Uncomment for Version 3 ###################################
     # # Read in the birb population density table as a pandas dataframe
